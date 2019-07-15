@@ -1,0 +1,53 @@
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #messageDiv{
+     background-color:rgb(50, 167, 221);
+     font-size: 30px;
+     font-family: 'Satisfy', cursive;
+   }
+   #aboutMe{
+    font-family: 'Satisfy', cursive;
+    background-color: #8dd9f7;
+    font-size: 25px;
+  }
+  #myPIC{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 19px solid #ffffff;
+  }
+  #thirdIdea{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    background-color:burlywood;
+  }
+  #secondIdea{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    background-color: #ac98e1;
+  }
+  #firstIdea{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    background-color: #e19590;
+  }
+  #fourthIdea{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    background-color: #8dd9f7;
+  }
+  #myCanvas {
+    border:4px solid #444;
+    border-radius: 15px;
+    background-color: #fafafa;
+}
+#fifthSection{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    background-color: #bfc2c4;
+}
+  
+

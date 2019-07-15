@@ -1,0 +1,100 @@
+<html>
+    <head>
+      
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+        <link rel="stylesheet" type="text/css" href="canvas.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="canvas.js"></script>
+        
+          </head>
+    <body>
+
+
+
+          <div class="row  text-center">
+                    <div class="col-12" id="messageDiv">Welcome Message</div>
+                </div>
+            
+        
+                <div class="container-fluid">
+                    <div class="row align-items-center" id="aboutMe">
+                        <div class="col-sm-12 col-md-6 p-5">
+                                <b>About Me</b><ul><li>Aseel Khalaf</li><li>20 Years Old</li><li>Palestenian</li></ul>My Hobbies : Learning , Painting , Singing .
+                            </div>
+                       
+                        <div class="col-12 col-md-6 text-center"><img class="img-fluid" src="images/myPic.jpg" id="myPIC">
+                        </div>
+                    </div>
+                </div>
+       
+               <div class="container-fluid   mt-lg-0 ">
+                   <div class="row text-center">
+                       
+                        <div class="col-12 col-sm-12 order-lg-1 order-3 col-md-6 col-lg-4 p-5 " id="thirdIdea">Idea # 3: Create A website  For Advertising (Help Start-Up Companies to Find Advertising Companies easly , by showing the user all these companies.) 
+                    </div>
+                       <div class="col-12 col-sm-12 order-lg-2  order-5 col-md-6 col-lg-4 p-5" id="secondIdea">Idea # 2: Create A website For Students To Manage Their Time (By adding their exams and homeworks to the system and help them to arrange Tasks in order to their proierty )
+                    </div>
+                       <div class="col-12 col-sm-12 order-lg-3 order-4 col-md-6 col-lg-4 p-5" id="firstIdea"> Idea # 1: Create A website For Healthy Food (Help people to know healthy and unhealthy food and help them to know if their meal is healthy or not .)</div>
+                       <div class="col-12 order-lg-4 order-2 col-md-6 col-lg-12 py-5" id="fourthIdea"> 
+                           <div class="row ">
+                                <div class="col-12"> Signiture : </div>
+                          <div class="col-12"><hr></div>
+                          <input type="button" value="Clear" id='resetSign'>
+                          
+                          <div class="col-lg-4 col-md-8">
+                                Line Width:
+                               <select id="linewidth">
+                                   <option value="" disabled selected hidden>Select Width</option>
+                               <option value = "1">1</option>
+                               <option value = "2">2</option>
+                               <option value = "3">3</option>
+                               <option value = "4">4</option>
+                               <option value = "5">5</option>
+                               <option value = "6">6</option>
+                               <option value = "7">7</option>
+                               <option value = "8">8</option>
+                               <option value = "9">9</option>
+                               <option value = "10">10</option>
+                       </select>
+
+                   
+                   </div>
+                          <canvas id="myCanvas" class="col-8">
+                              
+                          </canvas><br><br>
+                       </div>
+                            
+                   </div>
+
+                   <div class= "col-12 order-lg-5 order-1 col-md-12 col-lg-12 py-5" id="fifthSection">
+                        <input type='file' onchange="readURL(this);"><br>
+    <img id="blah" src="#" alt="your image" />
+    <script> function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+    
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                        
+                };
+    
+                reader.readAsDataURL(input.files[0]);
+            }
+    
+        }</script>
+                        
+                   </div>
+                   </div>
+                   </div>
+
+                
+        
+           
+        
+    </body>
+</html>
